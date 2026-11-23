@@ -379,7 +379,7 @@ depending on a black box library, [read my article](https://medium.com/@ageitgey
 
 * The face recognition model is trained on adults and does not work very well on children. It tends to mix
   up children quite easy using the default comparison threshold of 0.6.
-* Accuracy may vary between ethnic groups. Please see [this wiki page](https://github.com/ageitgey/face_recognition/wiki/Face-Recognition-Accuracy-Problems#question-face-recognition-works-well-with-european-individuals-but-overall-accuracy-is-lower-with-asian-individuals) for more details.
+* Accuracy may vary between ethnic groups.
 
 ## <a name="deployment">Deployment to Cloud Hosts (Heroku, AWS, etc)</a>
 
@@ -396,18 +396,3 @@ There are also [several prebuilt Docker images.](docker/README.md)
 
 Linux users with a GPU (drivers >= 384.81) and [Nvidia-Docker](https://github.com/NVIDIA/nvidia-docker) installed can run the example on the GPU: Open the [docker-compose.yml](docker-compose.yml) file and uncomment the `dockerfile: Dockerfile.gpu` and `runtime: nvidia` lines.
 
-## Having problems?
-
-If you run into problems, please read the [Common Errors](https://github.com/ageitgey/face_recognition/wiki/Common-Errors) section of the wiki before filing a github issue.
-
-## Thanks
-
-* Many, many thanks to [Davis King](https://github.com/davisking) ([@nulhom](https://twitter.com/nulhom))
-  for creating dlib and for providing the trained facial feature detection and face encoding models
-  used in this library. For more information on the ResNet that powers the face encodings, check out
-  his [blog post](http://blog.dlib.net/2017/02/high-quality-face-recognition-with-deep.html).
-* Thanks to everyone who works on all the awesome Python data science libraries like numpy, scipy, scikit-image,
-  pillow, etc, etc that makes this kind of stuff so easy and fun in Python.
-* Thanks to [Cookiecutter](https://github.com/audreyr/cookiecutter) and the
-  [audreyr/cookiecutter-pypackage](https://github.com/audreyr/cookiecutter-pypackage) project template
-  for making Python project packaging way more tolerable.
